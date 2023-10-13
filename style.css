@@ -1,4 +1,21 @@
+/* --------GENERAL STYLES -------- */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 4rem;
+}
+
+:root {
+  --bg-color: #000;
+  --font-color: #fff;
+  --secondary-bg-color: #7038cd;
+  --font: "Poppins";
+}
+
 body {
-  background-color: black;
-  color: aliceblue;
+  background-color: var(--bg-color);
+  font-family: var(--font);
+  color: var(--font-color);
+  height: 100vh;
+  max-width: 100vw;
 }
