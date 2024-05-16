@@ -8,7 +8,7 @@
 :root {
   --bg-color: #000;
   --font-color: #fff;
-  --secondary-bg-color: #7038cd;
+  --secondary-bg-color: #8F0C3F;
   --font: "Poppins";
 }
 
@@ -272,20 +272,20 @@ body::-webkit-scrollbar-track {
   height: 100%;
   position: absolute;
 }
-.progress__wordpress span {
-  background: linear-gradient(to right, #7038cd, #cd3870);
-  width: 95%;
+.progress__js span {
+  background: linear-gradient(to right, #8f0c3f, #7038cd);
+  width: 90%;
 }
 .progress__html span {
-  background: linear-gradient(to right, #7038cd, #cd3870);
-  width: 80%;
+  background: linear-gradient(to right, #8f0c3f, #7038cd);
+  width: 95%;
 }
-.progress__angular span {
-  background: linear-gradient(to right, #7038cd, #cd3870);
-  width: 80%;
+.progress__css span {
+  background: linear-gradient(to right, #8f0c3f, #7038cd);
+  width: 90%;
 }
 .progress__reactJs span {
-  background: linear-gradient(to right, #7038cd, #cd3870);
+  background: linear-gradient(to right, #8f0c3f, #7038cd);
   width: 70%;
 }
 
@@ -294,7 +294,7 @@ body::-webkit-scrollbar-track {
 .freelancer {
   height: 50vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url(./assets/freelancer2.webp);
+    url(../imagenes/freelancer2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -355,7 +355,7 @@ body::-webkit-scrollbar-track {
 }
 
 .project__card .overlay {
-  background: linear-gradient(-70deg, #cd3870, 20%, #7038cd);
+  background: linear-gradient(100deg, #7038cd, 20%, #8f0c3f);
   backdrop-filter: blur(2.7px);
   -webkit-backdrop-filter: blur(2.7px);
   position: absolute;
