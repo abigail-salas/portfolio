@@ -8,7 +8,7 @@
 :root {
   --bg-color: #000;
   --font-color: #fff;
-  --secondary-bg-color: #8F0C3F;
+  --secondary-bg-color: #8f0c3f;
   --font: "Poppins";
 }
 
@@ -273,20 +273,25 @@ body::-webkit-scrollbar-track {
   position: absolute;
 }
 .progress__js span {
-  background: linear-gradient(to right, #8f0c3f, #7038cd);
+  background: linear-gradient(to left, #8f0c3f, #7038cd);
   width: 90%;
 }
-.progress__html span {
-  background: linear-gradient(to right, #8f0c3f, #7038cd);
-  width: 95%;
+.progress__git span {
+  background: linear-gradient(to left, #8f0c3f, #7038cd);
+  width: 80%;
 }
-.progress__css span {
-  background: linear-gradient(to right, #8f0c3f, #7038cd);
+.progress__react span {
+  background: linear-gradient(to left, #8f0c3f, #7038cd);
   width: 90%;
 }
-.progress__reactJs span {
-  background: linear-gradient(to right, #8f0c3f, #7038cd);
+.progress__node span {
+  background: linear-gradient(to left, #8f0c3f, #7038cd);
   width: 70%;
+}
+
+.progress__sql span {
+  background: linear-gradient(to left, #8f0c3f, #7038cd);
+  width: 60%;
 }
 
 /* ------- FREE LANCER -------- */
@@ -307,6 +312,8 @@ body::-webkit-scrollbar-track {
 .card {
   background-color: #111111;
   transition: all 0.2s ease-in;
+  border: 5px solid black;
+  border-radius: 20px;
 }
 .service__logo {
   height: 60px;
@@ -329,6 +336,10 @@ body::-webkit-scrollbar-track {
 }
 .card:hover .service__logo i {
   color: #000;
+}
+
+.icono-color {
+  color: #a3a3a3;
 }
 
 /* ------- PORTFOLIO -------- */

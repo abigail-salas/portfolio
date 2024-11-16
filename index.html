@@ -4,14 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abigail Salas</title>
+
     <link
       rel="stylesheet"
-      href="https://unpkg.com/primeflex@^3/primeflex.css"
+      href="https://unpkg.com/primeflex@latest/primeflex.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/primeflex/themes/saga-blue.css"
-    />
+
     <link href="https://fonts.cdnfonts.com/css/lovelo" rel="stylesheet" />
 
     <script
@@ -112,29 +110,32 @@
           <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
             <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
             <p class="text-gray-500">
-              Web developer con preferencia en el Front-end. Tengo flexibilidad
-              laboral y me adapto a diferentes entornos de trabajo. Mi
-              experiencia me ayudo a desarrollar mi productividad, trabajar en
-              equipo y tener una mejor organización a la hora de resolver un
-              problema. Busco seguir creciendo, aportar a un nuevo espacio de
-              trabajo y poner a prueba mis conocimientos en la industria del
-              desarrollo.
+              Desarrolladora Web con sólida experiencia en el stack PERN (PostgreSQL, Express, React, Node.js) y una trayectoria en la enseñanza de desarrollo web. Me especializo en crear aplicaciones dinámicas y escalables, integrando prácticas ágiles y colaborativas. Aunque mi experiencia incluye una fuerte base en educación, busco avanzar y profundizar mis habilidades técnicas en el desarrollo de software, contribuyendo en proyectos innovadores y de alto impacto.
             </p>
             <div class="knowledge flex flex-column gap-3 mt-5">
               <p>JavaScript 90%</p>
               <div class="progress__bar progress__js">
                 <span></span>
               </div>
-              <p>HTML 95%</p>
-              <div class="progress__bar progress__html">
+              
+              <p>React 90%</p>
+              <div class="progress__bar progress__react">
                 <span></span>
               </div>
-              <p>CSS 90%</p>
-              <div class="progress__bar progress__css">
+
+
+              <p>Node 70%</p>
+              <div class="progress__bar progress__node">
                 <span></span>
               </div>
-              <p>React Js 70%</p>
-              <div class="progress__bar progress__reactJs">
+
+              <p>Git/Github 80%</p>
+              <div class="progress__bar progress__git">
+                <span></span>
+              </div>
+
+              <p>SQL 60%</p>
+              <div class="progress__bar progress__sql">
                 <span></span>
               </div>
             </div>
@@ -176,7 +177,7 @@
     </section>
     <!--SERVICES -->
     <div class="container">
-      <section id="services" class="services min-h-full w-full pb-7">
+      <section id="services" class="services">
         <div class="services__title flex flex-column gap-3 text-center">
           <h1 class="text-3xl md:text-5xl">Conocimiento</h1>
           <!-- <p class="text-gray-400 text-sm md:text-base">
@@ -186,57 +187,10 @@
             ullam non.
           </p> -->
         </div>
-        <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
-          <!--  <div
-            class="card flex align-items-center col-12 sm:col-6 lg:col-4 gap-3 p-2"
-          >
-            <div
-              class="service__logo flex align-items-center justify-content-center"
-            >
-              <i class="fa-brands fa-html5"></i>
-            </div>
-            <div class="service__name">
-              <p>HTML</p>
-            </div>
-          </div>
+
+        <div class="services__card w-full grid grid-nogutter mt-7">
           <div
-            class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2"
-          >
-            <div
-              class="service__logo flex align-items-center justify-content-center"
-            >
-              <i class="fa-brands fa-css3-alt"></i>
-            </div>
-            <div class="service__name">
-              <p>CSS</p>
-            </div>
-          </div>
-          <div
-            class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2"
-          >
-            <div
-              class="service__logo flex align-items-center justify-content-center"
-            >
-              <i class="fa-brands fa-js"></i>
-            </div>
-            <div class="service__name">
-              <p>JavaScript</p>
-            </div>
-          </div> -->
-          <div
-            class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2"
-          >
-            <div
-              class="service__logo flex align-items-center justify-content-center"
-            >
-              <i class="fa-brands fa-html5"></i>
-            </div>
-            <div class="service__name">
-              <p>HTML</p>
-            </div>
-          </div>
-          <div
-            class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2"
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
           >
             <div
               class="service__logo flex align-items-center justify-content-center"
@@ -247,20 +201,9 @@
               <p>JavaScript</p>
             </div>
           </div>
+
           <div
-            class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2"
-          >
-            <div
-              class="service__logo flex align-items-center justify-content-center"
-            >
-              <i class="fa-brands fa-css3-alt"></i>
-            </div>
-            <div class="service__name">
-              <p>CSS</p>
-            </div>
-          </div>
-          <div
-            class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2"
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
           >
             <div
               class="service__logo flex align-items-center justify-content-center"
@@ -268,35 +211,25 @@
               <i class="fa-brands fa-react"></i>
             </div>
             <div class="service__name">
-              <p>React JS</p>
+              <p>React.js</p>
             </div>
           </div>
+
           <div
-            class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2"
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
           >
             <div
               class="service__logo flex align-items-center justify-content-center"
             >
-              <i class="fa-brands fa-node"></i>
+              <i class="fa-brands fa-sass"></i>
             </div>
             <div class="service__name">
-              <p>Node JS</p>
+              <p>SASS</p>
             </div>
           </div>
+
           <div
-            class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2"
-          >
-            <div
-              class="service__logo flex align-items-center justify-content-center"
-            >
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <div class="service__name">
-              <p>DOM</p>
-            </div>
-          </div>
-          <div
-            class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2"
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
           >
             <div
               class="service__logo flex align-items-center justify-content-center"
@@ -307,28 +240,160 @@
               <p>Bootstrap</p>
             </div>
           </div>
+
           <div
-            class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2"
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
           >
             <div
               class="service__logo flex align-items-center justify-content-center"
             >
-              <i class="fa-solid fa-chalkboard-user"></i>
+              <i class="fa-brands fa-html5"></i>
             </div>
             <div class="service__name">
-              <p>Docente</p>
+              <p>HTML</p>
             </div>
           </div>
+
           <div
-            class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2"
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
           >
             <div
               class="service__logo flex align-items-center justify-content-center"
             >
-              <i class="fa-brands fa-sass"></i>
+              <i class="fa-brands fa-css3-alt"></i>
             </div>
             <div class="service__name">
-              <p>SASS</p>
+              <p>CSS</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-code icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>DOM</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-node"></i>
+            </div>
+            <div class="service__name">
+              <p>Node.js</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-solid fa-code icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>Express</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-solid fa-database icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>PostgreSQL</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-solid fa-database icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>MongoDB</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-solid fa-code-branch icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>JWT</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-solid fa-code-pull-request icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>Postman</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <div class="service__name">
+              <p>GIT</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="service__name">
+              <p>GitHub</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-solid fa-arrows-turn-to-dots icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>Scrum</p>
             </div>
           </div>
         </div>
@@ -526,8 +591,8 @@
           class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between"
         >
           <h3>Mis Servicios</h3>
-          <p>Desarrollo web</p>
-          <p>Docente en JS, HTML y CSS</p>
+          <p>Desarrollo web FullStack</p>
+          <p>Docente en JS, React, Node y PostgreSQL</p>
           <p>Desarrollo móvil</p>
         </div>
       </footer>
