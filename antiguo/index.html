@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abigail Salas</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/primeflex@latest/primeflex.css"
+    />
+
+    <link href="https://fonts.cdnfonts.com/css/lovelo" rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/b3f17f1dac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./public/favicon.ico" />
+
+
+    
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="flex w-full fixed top-0 z-1">
+      <nav class="flex justify-content-between w-full navbar">
+        <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+          <img
+            src="./public/ABBY (1).png"
+            alt="Logo portafolio"
+            width="50"
+            height="50"
+          />
+        </span>
+        <input
+          type="checkbox"
+          aria-label="Checkbox para mostrar y quitar hamburger menu"
+          class="checkbox xl:hidden"
+        />
+        <div class="hamburger__lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <div class="header__info flex align-items-center gap-3">
+          <ul class="flex flex-column xl:flex-row list-none">
+            <li onclick="scrollToSection('about')">Sobre mí</li>
+            <li onclick="scrollToSection('services')">Conocimiento</li>
+            <li onclick="scrollToSection('portfolio')">Proyectos</li>
+            <li onclick="scrollToSection('contact')">Contacto</li>
+          </ul>
+          <div class="hireMe__button pt-4">
+            <a
+              href="mailTo:salasmedina02@gmail.com"
+              aria-label="Enviar mensaje al correo"
+              class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm"
+              >Contratame</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--HOME PAGE -->
+    <div class="container">
+      <section
+        id="home"
+        class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4"
+      >
+        <div class="left__content col-12 xl:col-6">
+          <div class="message__bubble triangle mb-4 md:mb-2">
+            <div class="message__text p-2 sm:p-3 text-center">
+              <p>Hola, Yo soy</p>
+            </div>
+          </div>
+          <h1 class="text-3xl sm:text-5xl md:text-7xl">Abigail Salas</h1>
+          <p class="text-gray-500">Full-Stack Developer</p>
+          <div class="home__buttons flex align-items-center gap-2 mt-6">
+            <a
+              href="./assets/CV_Abigail_Salas.pdf"
+              aria-label="Descargar curriculum"
+              class="cursor-pointer border-round-lg no-underline"
+              download
+              >Descargar CV</a
+            >
+            <button
+              onclick="scrollToSection('portfolio')"
+              aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
+              class="cursor-pointer border-round-lg"
+            >
+              Mi trabajo
+            </button>
+          </div>
+        </div>
+        <div class="right__content col-9 sm:col-6 xl:col-5">
+          <img
+            src="./public/foto_de_perfil.png"
+            alt="Foto perfil"
+            width="100"
+            height="100"
+          />
+        </div>
+      </section>
+      <!--ABOUT ME-->
+      <section
+        id="about"
+        class="about__me w-full min-h-screen flex align-items-center"
+      >
+        <div
+          class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0"
+        >
+          <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+            <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
+            <p class="text-gray-500">
+              Desarrolladora Web con sólida experiencia en el stack PERN (PostgreSQL, Express, React, Node.js) y una trayectoria en la enseñanza de desarrollo web. Me especializo en crear aplicaciones dinámicas y escalables, integrando prácticas ágiles y colaborativas. Aunque mi experiencia incluye una fuerte base en educación, busco avanzar y profundizar mis habilidades técnicas en el desarrollo de software, contribuyendo en proyectos innovadores y de alto impacto.
+            </p>
+            <div class="knowledge flex flex-column gap-3 mt-5">
+              <p>JavaScript 90%</p>
+              <div class="progress__bar progress__js">
+                <span></span>
+              </div>
+              
+              <p>React 90%</p>
+              <div class="progress__bar progress__react">
+                <span></span>
+              </div>
+
+
+              <p>Node 70%</p>
+              <div class="progress__bar progress__node">
+                <span></span>
+              </div>
+
+              <p>Git/Github 80%</p>
+              <div class="progress__bar progress__git">
+                <span></span>
+              </div>
+
+              <p>SQL 60%</p>
+              <div class="progress__bar progress__sql">
+                <span></span>
+              </div>
+            </div>
+            <div class="hireMe__button pt-4">
+              <a
+                href="mailTo:salasmedina02@gmail.com"
+                aria-label="Enviar mensaje al correo"
+                class="cursor-pointer no-underline border-round-lg"
+                >Contratame</a
+              >
+            </div>
+          </div>
+          <div class="image col p-0 mt-6 md:mt-0">
+            <img
+              src="./assets/imagenes/freelancer.jpg"
+              alt="Foto relacionado a acerca de mí"
+              width="100"
+              height="100"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--FREE LANCER SECTION -->
+    <section
+      class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center"
+    >
+      <p class="text-sm">Tienes un proyecto en mente?</p>
+      <h1 class="text-center">Estoy disponible como freelancer</h1>
+      <div class="hireMe__button pt-4">
+        <a
+          href="mailTo:salasmedina02@gmail.com"
+          aria-label="Enviar mensaje al correo"
+          class="cursor-pointer no-underline border-round-lg"
+          >Escríbeme</a
+        >
+      </div>
+    </section>
+    <!--SERVICES -->
+    <div class="container">
+      <section id="services" class="services">
+        <div class="services__title flex flex-column gap-3 text-center">
+          <h1 class="text-3xl md:text-5xl">Conocimiento</h1>
+          <!-- <p class="text-gray-400 text-sm md:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit
+            ab mollitia optio quod recusandae placeat aliquam veniam officiis
+            cum quam eum architecto quidem, nobis commodi consequatur distinctio
+            ullam non.
+          </p> -->
+        </div>
+
+        <div class="services__card w-full grid grid-nogutter mt-7">
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="service__name">
+              <p>JavaScript</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <div class="service__name">
+              <p>React.js</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-sass"></i>
+            </div>
+            <div class="service__name">
+              <p>SASS</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+            <div class="service__name">
+              <p>Bootstrap</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="service__name">
+              <p>HTML</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="service__name">
+              <p>CSS</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-code icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>DOM</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-node"></i>
+            </div>
+            <div class="service__name">
+              <p>Node.js</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-solid fa-code icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>Express</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-solid fa-database icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>PostgreSQL</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-solid fa-database icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>MongoDB</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-solid fa-code-branch icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>JWT</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-solid fa-code-pull-request icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>Postman</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <div class="service__name">
+              <p>GIT</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="service__name">
+              <p>GitHub</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 md:col-6 lg:col-4 xl:col-3 gap-3 p-2 card flex align-items-center"
+          >
+            <div
+              class="service__logo flex align-items-center justify-content-center"
+            >
+            <i class="fa-solid fa-arrows-turn-to-dots icono-color"></i>
+            </div>
+            <div class="service__name">
+              <p>Scrum</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--PORTFOLIO -->
+      <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+        <div class="portfolio__title flex flex-column gap-3 text-center">
+          <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
+          <!-- <p class="text-gray-400 text-sm md:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit
+            ab mollitia optio quod recusandae placeat aliquam veniam officiis
+            cum quam eum architecto quidem, nobis commodi consequatur distinctio
+            ullam non.
+          </p> -->
+        </div>
+        <div class="portfolio__gallery">
+          <div class="gallery__categories mb-5 mt-5">
+            <!-- <ul class="flex list-none flex-wrap justify-content-center gap-3">
+              <li class="filter-item active" data-filter="all">Todos</li>
+              <li class="filter-item" data-filter="gym">Gimnasio</li>
+              <li class="filter-item" data-filter="tours__Web">Tours web</li>
+              <li class="filter-item" data-filter="world__Tours">
+                Inmobiliaria web
+              </li>
+              <li class="filter-item" data-filter="e__commerce">E-commerce</li>
+            </ul> -->
+          </div>
+          <div
+            class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3"
+          >
+            <div class="project__card e__commerce">
+              <img src="./assets/imagenes/world-of-minesweeper.png" alt="" />
+              <div class="overlay"></div>
+              <div
+                class="project__info flex w-full flex-column justify-content-center align-items-center text-center"
+              >
+                <h2>Busca Minas</h2>
+                <p>
+                  Buscaminas es un videojuego para un jugador. El objetivo del
+                  juego es despejar un campo de minas sin detonar ninguna.
+                </p>
+
+                <a
+                  href="https://busca-minas-e8cfad.netlify.app"
+                  target="_blank"
+                  style="color: white"
+                  ><i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project__card tours__Web">
+              <img src="./assets/imagenes/Lista-de-quehaceres.png" alt="" />
+              <div class="overlay"></div>
+              <div
+                class="project__info flex w-full flex-column justify-content-center align-items-center text-center"
+              >
+                <h2>To Do List</h2>
+                <p>
+                  ¡Pagína de lista de quehaceres! Anotá todas tus tareas del día
+                  aquí.
+                </p>
+                <a
+                  href="https://todolist-ae8e5d.netlify.app/"
+                  target="_blank"
+                  style="color: white"
+                  ><i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project__card gym">
+              <img src="./assets/imagenes/Canal-del-clima.png" alt="" />
+              <div class="overlay"></div>
+              <div
+                class="project__info flex w-full flex-column justify-content-center align-items-center text-center"
+              >
+                <h2>Weather Channel</h2>
+                <p>
+                  ¡Aquí podrás ver el clima de cada ciudad! Con una linda imagen
+                  ilustrativa.
+                </p>
+                <a
+                  href="https://weatherchannel-bafb49.netlify.app/"
+                  target="_blank"
+                  style="color: white"
+                  ><i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project__card world__Tours">
+              <img src="./assets/imagenes/tateti.png" alt="" />
+              <div class="overlay"></div>
+              <div
+                class="project__info flex w-full flex-column justify-content-center align-items-center text-center"
+              >
+                <h2>Ta Te Ti</h2>
+                <p>
+                  El clasico TA TE TI o también conocido como TRES EN RAYA. Aquí
+                  podrás jugar con 1vs1 con la computadora.
+                </p>
+                <a
+                  href="https://tateti-804a09.netlify.app/"
+                  target="_blank"
+                  style="color: white"
+                  ><i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project__card tours__Web">
+              <img src="./assets/imagenes/Typer-D.png" alt="" />
+              <div class="overlay"></div>
+              <div
+                class="project__info flex w-full flex-column justify-content-center align-items-center text-center"
+              >
+                <h2>Typer-D</h2>
+                <p>
+                  Este juego interactivo se desarrolla de la siguiente manera:
+                  recibirá una palabra en inglés y la tendrá que tipear en un
+                  input en el menor tiempo posible. Si la palabra tipeada
+                  coincide con la recibida, pasa a la siguiente y se le asigna
+                  un tiempo extra.
+                </p>
+                <a
+                  href="https://typer-d-6eaec9.netlify.app/"
+                  target="_blank"
+                  style="color: white"
+                  ><i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--FOOTER -->
+      <footer
+        id="contact"
+        class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center"
+      >
+        <div
+          class="social__media col-12 md:col-4 flex flex-column justify-content-between"
+        >
+          <h3>Redes sociales</h3>
+          <p>Auténtica e innovadora</p>
+          <p>
+            Desarrollo lo que necesitas, con un enfoque en usabilidad y
+            rendimiento
+          </p>
+          <div
+            class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3"
+          >
+            <!--  <a
+              href="#"
+              target="_blank"
+              aria-label="Ir a discord"
+            >
+            <i class="fa-brands fa-discord"></i>
+            </a> -->
+            <a
+              href="https://github.com/abigail-salas"
+              target="_blank"
+              aria-label="Ir a gitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abigail-salas-2021/"
+              target="_blank"
+              aria-label="Ir a linkedin"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center"
+        >
+          <h3>Contacto</h3>
+          <div class="phone__number flex align-items-center gap-2">
+            <i class="fa-solid fa-phone"></i>
+            <p>+54 9 3875202681</p>
+          </div>
+          <div class="email flex align-items-center gap-2">
+            <i class="fa-solid fa-envelope"></i>
+            <p>salasmedina02@gmail.com</p>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5493875202681"
+            target="_blank"
+            class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg"
+          >
+            <span> <i class="fa-brands fa-whatsapp"></i> </span>Escríbeme
+          </a>
+        </div>
+        <div
+          class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between"
+        >
+          <h3>Mis Servicios</h3>
+          <p>Desarrollo web FullStack</p>
+          <p>Docente en JS, React, Node y PostgreSQL</p>
+          <p>Desarrollo móvil</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
