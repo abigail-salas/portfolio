@@ -2,6 +2,7 @@ import React from "react";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import { scrollToSection } from "../utils/function";
 
 function Home() {
   return (
@@ -29,7 +30,7 @@ function Home() {
                 Descargar CV
               </a>
               <button
-                onClick="scrollToSection('portfolio')"
+                onClick={() => scrollToSection("portfolio")}
                 aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
                 className="cursor-pointer border-round-lg"
               >

@@ -1,10 +1,8 @@
 import React from "react";
 
-function Navbar() {
-  const scrollToSection = (sectionId) => {
-    document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
-  };
+import { scrollToSection } from "../utils/function";
 
+function Navbar() {
   return (
     <header className="flex w-full fixed top-0 z-1">
       <nav className="flex justify-content-between w-full navbar">

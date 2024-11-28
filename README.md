@@ -1,8 +1,41 @@
-# React + Vite
+# Portfolio (prueba)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio está deployado en la siguiente URL
 
-Currently, two official plugins are available:
+- [Portfolio](http://localhost:5173/portfolio-prueba/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```plaintext
+src/
+├── components/
+│   └── Navbar.jsx
+│   └── Footer.jsx
+├── context/
+├── assets/
+│   └── iconLibrary.js
+│   └── function.js
+├── views/
+│   └── Home.jsx
+│   └── AboutMe.jsx
+│   └── Projects.jsx
+│   └── Skills.jsx
+├── assets/
+│   └── documents/
+│       └── CV_Abigail_Salas.pdf
+│   └── img/
+│       └── about-me.jpeg
+│       └── Canal-del-clima.png
+│       └── freelancer.jpg
+│       └── freelancer2.webp
+│       └── lista-de-quehaceres.png
+│       └── Logotipo.png
+│       └── tateti.png
+│       └── Typer-D.png
+│       └── world-of-minesweeper.png
+├── App.jsx
+├── main.jsx
+├── index.css
+public/
+├── favicon.ico
+├── ABBY.png
+├── foto_de_perfil.png
+```
